@@ -1,2 +1,32 @@
-# student-success-prediction
-DHBW Data Science group project comparing student outcome predictions at enrollment and after the first semester.
+# Student Success Prediction
+
+A DHBW Data Science group project. We investigate how much first-semester results improve predictions of recorded degree outcomes compared with information available at enrollment alone.
+
+The three outcome labels are **Dropout**, **Enrolled**, and **Graduate**. They describe students’ status at the end of the normal program duration. The dataset does not provide individual withdrawal dates, so this analysis cannot establish how far in advance an adviser could have acted.
+
+## Experiment
+
+| Model | Enrollment features | Enrollment + first-semester features |
+|---|---|---|
+| Logistic Regression baseline | Planned | Planned |
+| Tuned Random Forest | Planned | Planned |
+
+Use the same stratified train/test split for all four configurations. Fit preprocessing, select features, and tune hyperparameters using training data and cross-validation. Report held-out macro-F1, dropout precision and recall, and a confusion matrix. See the [evaluation protocol](docs/evaluation.md).
+
+## Data
+
+[UCI Predict Students’ Dropout and Academic Success](https://doi.org/10.24432/C5MC89) by Realinho, Vieira Martins, Machado, and Baptista (2021), licensed under CC BY 4.0. See [data preparation](data/README.md) for the inputs and processed dataset handoff.
+
+## Repository structure
+
+| Location | Purpose |
+|---|---|
+| [data/](data/README.md) | Data source, feature timing, and processed dataset |
+| [src/](src/README.md) | Preprocessing, training, and evaluation code |
+| [app/](app/README.md) | Streamlit demo and model integration |
+| [docs/evaluation.md](docs/evaluation.md) | Comparison design, metrics, and results template |
+| [docs/team-and-submission.md](docs/team-and-submission.md) | Ownership, rubric, and submission checklist |
+
+## Project status
+
+Repository scaffold. Add the training and app commands when they are implemented. Add the public Streamlit URL after verifying live predictions in a signed-out browser.
