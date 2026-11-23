@@ -8,4 +8,4 @@ Source: [UCI Predict Students’ Dropout and Academic Success](https://archive.i
 - **After semester one:** Add first-semester measures such as modules passed and average grade. Exclude semester-two features from both configurations.
 - **Target:** Keep the recorded outcome separate from inputs.
 
-Keep the source download under `data/raw/`. Add the preparation script under `src/` and commit its cleaned CSV under `data/processed/`. Fit learned transformations inside the training pipeline after splitting. Record the column definitions and the command that regenerates the cleaned CSV here.
+Keep the source download under `data/raw/`. `PYTHONPATH=src python src/download_data.py` downloads the official ZIP, and `PYTHONPATH=src python src/prepare_data.py` validates it and regenerates the shared CSV, feature metadata, and frozen split under `data/processed/`. Fit learned transformations inside the training pipeline after splitting. The timing decisions are recorded in [`docs/FEATURE_AVAILABILITY.md`](../docs/FEATURE_AVAILABILITY.md).
