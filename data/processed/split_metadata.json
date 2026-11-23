@@ -1,0 +1,22 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "n_rows": 4424,
+  "n_train": 3539,
+  "n_test": 885,
+  "class_labels": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "train_class_counts": {
+    "Dropout": 1137,
+    "Enrolled": 635,
+    "Graduate": 1767
+  },
+  "test_class_counts": {
+    "Dropout": 284,
+    "Enrolled": 159,
+    "Graduate": 442
+  }
+}

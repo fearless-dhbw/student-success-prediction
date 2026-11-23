@@ -17,6 +17,19 @@ Use the same stratified train/test split for all four configurations. Fit prepro
 
 [UCI Predict Students’ Dropout and Academic Success](https://doi.org/10.24432/C5MC89) by Realinho, Vieira Martins, Machado, and Baptista (2021), licensed under CC BY 4.0. See [data preparation](data/README.md) for the inputs and processed dataset handoff.
 
+## Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+PYTHONPATH=src python src/download_data.py
+PYTHONPATH=src python src/prepare_data.py
+python -m pytest tests -q
+```
+
+`data/raw/` is local and ignored. The validated shared CSV, frozen split, and feature metadata are in `data/processed/`.
+
 ## Repository structure
 
 | Location | Purpose |
@@ -29,4 +42,4 @@ Use the same stratified train/test split for all four configurations. Fit prepro
 
 ## Project status
 
-Repository scaffold. Add the training and app commands when they are implemented. Add the public Streamlit URL after verifying live predictions in a signed-out browser.
+Sprint 1 provides the validated shared dataset, conservative feature scenarios, frozen split, and unfitted preprocessing. Logistic Regression, Random Forest, and the Streamlit app are not implemented yet. Add the public Streamlit URL only after verifying live predictions in a signed-out browser.
