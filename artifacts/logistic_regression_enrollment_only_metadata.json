@@ -1,0 +1,37 @@
+{
+  "model": "Logistic Regression",
+  "scenario": "enrollment_only",
+  "target_column": "Target",
+  "class_labels": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "feature_columns": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Gender",
+    "Age at enrollment",
+    "International"
+  ],
+  "random_state": 42,
+  "cv_folds": 5,
+  "estimator": {
+    "C": 1.0,
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  }
+}

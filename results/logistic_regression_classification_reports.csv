@@ -1,0 +1,25 @@
+label,precision,recall,f1-score,support,owner,scenario,model,split
+Dropout,0.629951690821256,0.5734388742304309,0.6003683241252302,1137.0,Person A,enrollment_only,Logistic Regression,train
+Enrolled,0.5701754385964912,0.2047244094488189,0.30127462340672073,635.0,Person A,enrollment_only,Logistic Regression,train
+Graduate,0.6507029876977153,0.8381437464629315,0.7326242888943854,1767.0,Person A,enrollment_only,Logistic Regression,train
+accuracy,0.6394461712348121,0.6394461712348121,0.6394461712348121,0.6394461712348121,Person A,enrollment_only,Logistic Regression,train
+macro avg,0.6169433723718208,0.5387690100473937,0.5447557454754454,3539.0,Person A,enrollment_only,Logistic Regression,train
+weighted avg,0.6295870740984468,0.6394461712348121,0.6127367303956014,3539.0,Person A,enrollment_only,Logistic Regression,train
+Dropout,0.5604838709677419,0.4894366197183099,0.5225563909774437,284.0,Person A,enrollment_only,Logistic Regression,test
+Enrolled,0.3137254901960784,0.10062893081761007,0.1523809523809524,159.0,Person A,enrollment_only,Logistic Regression,test
+Graduate,0.6040955631399317,0.8009049773755657,0.688715953307393,442.0,Person A,enrollment_only,Logistic Regression,test
+accuracy,0.5751412429378531,0.5751412429378531,0.5751412429378531,0.5751412429378531,Person A,enrollment_only,Logistic Regression,test
+macro avg,0.49276830810125066,0.46365684263716184,0.45455109888859635,885.0,Person A,enrollment_only,Logistic Regression,test
+weighted avg,0.537932216049565,0.5751412429378531,0.5390362009356306,885.0,Person A,enrollment_only,Logistic Regression,test
+Dropout,0.7578757875787578,0.7405452946350044,0.7491103202846975,1137.0,Person A,first_semester,Logistic Regression,train
+Enrolled,0.6107784431137725,0.32125984251968503,0.42105263157894735,635.0,Person A,first_semester,Logistic Regression,train
+Graduate,0.7659980897803247,0.9077532541029995,0.8308728308728309,1767.0,Person A,first_semester,Logistic Regression,train
+accuracy,0.7487990957897711,0.7487990957897711,0.7487990957897711,0.7487990957897711,Person A,first_semester,Logistic Regression,train
+macro avg,0.7115507734909516,0.656519463752563,0.6670119275788252,3539.0,Person A,first_semester,Logistic Regression,train
+weighted avg,0.7355376395863596,0.7487990957897711,0.7310706830654492,3539.0,Person A,first_semester,Logistic Regression,train
+Dropout,0.7192982456140351,0.721830985915493,0.7205623901581723,284.0,Person A,first_semester,Logistic Regression,test
+Enrolled,0.4444444444444444,0.20125786163522014,0.27705627705627706,159.0,Person A,first_semester,Logistic Regression,test
+Graduate,0.7481060606060606,0.8936651583710408,0.8144329896907216,442.0,Person A,first_semester,Logistic Regression,test
+accuracy,0.7141242937853107,0.7141242937853107,0.7141242937853107,0.7141242937853107,Person A,first_semester,Logistic Regression,test
+macro avg,0.6372829168881801,0.6055846686405846,0.6040172189683903,885.0,Person A,first_semester,Logistic Regression,test
+weighted avg,0.6843053640778886,0.7141242937853107,0.6877638963843706,885.0,Person A,first_semester,Logistic Regression,test
