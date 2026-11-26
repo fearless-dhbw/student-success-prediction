@@ -10,9 +10,9 @@
 
 | Inputs | Model | Macro-F1 | Dropout precision | Dropout recall |
 |---|---|---|---|---|
-| Enrollment | Logistic Regression | Pending | Pending | Pending |
+| Enrollment | Logistic Regression | 0.455 | 0.560 | 0.489 |
 | Enrollment | Random Forest | Pending | Pending | Pending |
-| Enrollment + semester one | Logistic Regression | Pending | Pending | Pending |
+| Enrollment + semester one | Logistic Regression | 0.604 | 0.719 | 0.722 |
 | Enrollment + semester one | Random Forest | Pending | Pending | Pending |
 
 Document the split, preprocessing, hyperparameters, feature subset, and observed error patterns alongside these results. Interpret the scores as performance on recorded degree outcomes. Individual dropout dates are unavailable in the public dataset.

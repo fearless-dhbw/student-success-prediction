@@ -1,0 +1,19 @@
+actual,predicted,count,owner,scenario,model,split
+Dropout,Dropout,139,Person A,enrollment_only,Logistic Regression,test
+Enrolled,Dropout,40,Person A,enrollment_only,Logistic Regression,test
+Graduate,Dropout,69,Person A,enrollment_only,Logistic Regression,test
+Dropout,Enrolled,16,Person A,enrollment_only,Logistic Regression,test
+Enrolled,Enrolled,16,Person A,enrollment_only,Logistic Regression,test
+Graduate,Enrolled,19,Person A,enrollment_only,Logistic Regression,test
+Dropout,Graduate,129,Person A,enrollment_only,Logistic Regression,test
+Enrolled,Graduate,103,Person A,enrollment_only,Logistic Regression,test
+Graduate,Graduate,354,Person A,enrollment_only,Logistic Regression,test
+Dropout,Dropout,205,Person A,first_semester,Logistic Regression,test
+Enrolled,Dropout,51,Person A,first_semester,Logistic Regression,test
+Graduate,Dropout,29,Person A,first_semester,Logistic Regression,test
+Dropout,Enrolled,22,Person A,first_semester,Logistic Regression,test
+Enrolled,Enrolled,32,Person A,first_semester,Logistic Regression,test
+Graduate,Enrolled,18,Person A,first_semester,Logistic Regression,test
+Dropout,Graduate,57,Person A,first_semester,Logistic Regression,test
+Enrolled,Graduate,76,Person A,first_semester,Logistic Regression,test
+Graduate,Graduate,395,Person A,first_semester,Logistic Regression,test

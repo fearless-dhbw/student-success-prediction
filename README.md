@@ -8,7 +8,7 @@ The three outcome labels are **Dropout**, **Enrolled**, and **Graduate**. They d
 
 | Model | Enrollment features | Enrollment + first-semester features |
 |---|---|---|
-| Logistic Regression baseline | Planned | Planned |
+| Logistic Regression baseline | Complete | Complete |
 | Tuned Random Forest | Planned | Planned |
 
 Use the same stratified train/test split for all four configurations. Fit preprocessing, select features, and tune hyperparameters using training data and cross-validation. Report held-out macro-F1, dropout precision and recall, and a confusion matrix. See the [evaluation protocol](docs/evaluation.md).
@@ -29,6 +29,20 @@ python -m pytest tests -q
 ```
 
 `data/raw/` is local and ignored. The validated shared CSV, frozen split, and feature metadata are in `data/processed/`.
+
+## Logistic Regression baseline
+
+Run Person A's two fixed, leakage-safe baselines with:
+
+```bash
+PYTHONPATH=src python src/train_logistic_regression.py
+```
+
+The command performs five-fold stratified CV on training data, evaluates each
+fixed scenario once on the held-out split, and writes pipelines, metrics,
+classification reports, and confusion matrices. See
+[`docs/HANDOFF_PERSON_A.md`](docs/HANDOFF_PERSON_A.md) for the shared
+comparison interface.
 
 ## Repository structure
 
